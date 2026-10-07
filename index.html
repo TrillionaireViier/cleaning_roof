@@ -63,9 +63,9 @@
     }
 
     /* Desktop Navigation */
-    nav.desktop-nav { display: flex; gap: 14px; align-items: center; }
+    nav.desktop-nav { display: flex; gap: 10px; align-items: center; }
     nav.desktop-nav a {
-      color: var(--text-sub); text-decoration: none; font-size: 0.8rem;
+      color: var(--text-sub); text-decoration: none; font-size: 0.78rem;
       font-weight: 600; cursor: pointer; transition: color 0.2s; white-space: nowrap;
     }
     nav.desktop-nav a:hover, nav.desktop-nav a.active { color: var(--celtic-cyan); }
@@ -227,13 +227,14 @@
         <a onclick="switchTab('home')" class="active" id="nav-home">Home</a>
         <a onclick="switchTab('services')" id="nav-services">Services</a>
         <a onclick="switchTab('moss')" id="nav-moss">Moss Removal</a>
-        <a onclick="switchTab('softwash')" id="nav-softwash">Biocidal Softwash</a>
-        <a onclick="switchTab('pressure')" id="nav-pressure">Pressure Washing</a>
-        <a onclick="switchTab('sealing')" id="nav-sealing">Roof Tile Sealing</a>
-        <a onclick="switchTab('calculator')" id="nav-calculator">Instant Quote Calculator</a>
-        <a onclick="switchTab('beforeafter')" id="nav-beforeafter">Before & After</a>
-        <a onclick="switchTab('commercial')" id="nav-commercial">Commercial Clean</a>
-        <a onclick="switchTab('contact')" id="nav-contact">Contact Us</a>
+        <a onclick="switchTab('softwash')" id="nav-softwash">Softwash</a>
+        <a onclick="switchTab('pressure')" id="nav-pressure">Pressure Wash</a>
+        <a onclick="switchTab('sealing')" id="nav-sealing">Sealing</a>
+        <a onclick="switchTab('calculator')" id="nav-calculator">Calculator</a>
+        <a onclick="switchTab('beforeafter')" id="nav-beforeafter">Gallery</a>
+        <a onclick="switchTab('commercial')" id="nav-commercial">Commercial</a>
+        <a onclick="switchTab('contact')" id="nav-contact">Contact</a>
+        <a onclick="switchTab('policy')" id="nav-policy">Privacy Policy</a>
       </nav>
 
       <div style="display: flex; gap: 10px; align-items: center;">
@@ -248,7 +249,7 @@
     <div class="mobile-drawer" onclick="event.stopPropagation()">
       <div class="mobile-drawer-header">
         <div class="logo">
-          <div class="logo-icon">🧼</div>
+          <div class="logo-icon">☘️</div>
           <span>Celtic Softwash</span>
         </div>
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()">✕</button>
@@ -264,6 +265,7 @@
         <a onclick="switchTab('beforeafter')">📷 Before & After</a>
         <a onclick="switchTab('commercial')">🏢 Commercial Clean</a>
         <a onclick="switchTab('contact')">📞 Contact Us</a>
+        <a onclick="switchTab('policy')">🔒 Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -462,12 +464,37 @@
     </div>
   </section>
 
+  <!-- PAGE 11: PRIVACY POLICY & GDPR -->
+  <section id="page-policy" class="page-view">
+    <div class="container" style="max-width: 900px;">
+      <h1 style="font-size: 2.4rem; margin-bottom: 14px; color: var(--celtic-cyan);">Privacy Policy & Data Protection</h1>
+      <p style="color: var(--text-sub); margin-bottom: 24px; font-size: 0.95rem;">Last updated: October 2026 | Celtic Softwash Ireland</p>
+      
+      <div style="background: var(--surface-card); border: 1px solid var(--border-light); padding: 30px; border-radius: 16px; line-height: 1.8; color: #d1d5db;">
+        <h3 style="color: #fff; margin-bottom: 10px;">1. Information We Collect</h3>
+        <p style="margin-bottom: 20px;">We collect personal details such as name, email address, phone number, and Eircode / property address when you request a roof cleaning quote or contact our team via phone or web forms.</p>
+
+        <h3 style="color: #fff; margin-bottom: 10px;">2. How We Use Your Data</h3>
+        <p style="margin-bottom: 20px;">Your information is exclusively used for delivering roof cleaning estimates, scheduling service visits across Ireland, providing 5-year warranty documentation, and responding to service customer inquiries under GDPR regulations.</p>
+
+        <h3 style="color: #fff; margin-bottom: 10px;">3. Data Protection & Security</h3>
+        <p style="margin-bottom: 20px;">We never sell or rent your personal details to third parties. All data transmission is encrypted over standard SSL connection.</p>
+
+        <h3 style="color: #fff; margin-bottom: 10px;">4. Your Rights under GDPR</h3>
+        <p style="margin-bottom: 20px;">Irish & EU citizens have full rights to request access to, correction of, or deletion of their personal data. To exercise your rights, email us at <a href="mailto:info@celticsoftwash.ie" style="color: var(--celtic-cyan);">info@celticsoftwash.ie</a>.</p>
+
+        <h3 style="color: #fff; margin-bottom: 10px;">5. Contact Details</h3>
+        <p>Celtic Softwash Ireland Ltd<br>Dublin & Nationwide Service Hub<br>Phone: 01 490 8822 | Email: info@celticsoftwash.ie</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="container footer-flex">
       <div>
         <div class="logo" style="margin-bottom: 14px;">
-          <div class="logo-icon">🧼</div>
+          <div class="logo-icon">☘️</div>
           <span>Celtic Softwash Ireland</span>
         </div>
         <p style="font-size: 0.9rem; max-width: 400px;">Ireland's leading roof moss removal & biocidal softwashing experts. Fully insured with €6.5M public liability.</p>
@@ -478,6 +505,7 @@
           <li><a onclick="switchTab('home')" style="color: var(--text-sub); cursor: pointer;">Home</a></li>
           <li><a onclick="switchTab('moss')" style="color: var(--text-sub); cursor: pointer;">Moss Removal</a></li>
           <li><a onclick="switchTab('calculator')" style="color: var(--text-sub); cursor: pointer;">Price Calculator</a></li>
+          <li><a onclick="switchTab('policy')" style="color: var(--text-sub); cursor: pointer;">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
